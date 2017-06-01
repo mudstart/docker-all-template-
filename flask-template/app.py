@@ -14,14 +14,9 @@ import json
 app = Flask(__name__)
 
 @app.route('/')
-def main():
-    tmdb.API_KEY = 'ea8b8b13173cd8da69ef4a48377c6734'
-    search = tmdb.Search()
-    response = search.movie(query='The Bourne')
-    for s in search.results:
-        print(s['title'], s['id'], s['release_date'], s['popularity'])
+def hello():
 
-    return s
+    return 'Hello Word'
 #
 # @app.route('/facturas')
 # def facturas():
