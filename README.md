@@ -20,8 +20,23 @@ docker-compose build
 
 # Using in Ruby on Rails
 
+for using mysql
 ```
 docker-compose run app rails new . --force --database=mysql --skip-bundle
+
+```
+for using postgres
+```
+docker-compose run app rails new . --force --database=postgres--skip-bundle
+
+```
+to contruct the container use
+```
+docker-compose build
+```
+to up server use
+```
+docker-compose up
 ```
 
 # Using in React
